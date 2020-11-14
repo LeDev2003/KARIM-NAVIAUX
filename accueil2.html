@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil-karim-2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--CDN jquery--> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> <!--Boostrap CDN-->
+        
+
+</head>
+
+<body style="transition: all 1s ease;">
+    
+    <script>
+        $(document).ready(function()
+        {
+            $(window).scroll(function()
+            {
+                if($(this).scrollTop() >= 30)
+                {
+                   addCSS()
+                }
+                else
+                {
+                    removeCSS()
+                }
+               
+            })     
+              function addCSS()
+            {
+                
+                $('nav').css({'background-color' : 'white', 'border' : '1px solid white', 'color' : 'black'});
+                    $('nav a').css('color', 'black') 
+                    $('.logo').css('color', 'black')
+                    
+            }   
+            function removeCSS()
+            {
+                $('nav').css({'background-color' : 'rgba(0, 0, 0, 0)', 'border' : '1px solid rgba(0, 0, 0, 0) ', 'color' : 'white'});
+                    $('nav a').css('color', 'white') 
+                    $('.logo').css('color', 'white')
+
+            }
+         })    
+           
+     </script>   
+     <script>
+         $(document).ready(function()
+         {
+          
+             var li1 =$('.li1');
+
+             $(window).scroll(function()
+             {
+                 if($(this).scrollTop() > 500  || $(this).scrollTop() < 500)
+                 {
+                     li1.css('color', 'turquoise    ')
+                 }
+                 else if ($(this).scroll() >1000)
+                 {
+                     li1.click(function()
+                     {
+                         $(hmtl, body).animate({scrollTop:'0'}, 3000)
+                     })
+                 }
+                
+             })
+         })
+     </script> 
+     <script>
+          $(document).ready(function()
+         {
+             
+             var li2 =$('.li2');
+
+             $(window).scroll(function()
+             {
+                 if($(this).scrollTop() >= 600)
+                 {
+                     li2.css('color', 'greenyellow')
+                 }
+                  if($(this).scrollTop() > 750)
+                 {
+                     $('.pro1 img').css('opacity', '1')
+                 }
+                 else
+                 {
+                    $('.pro1 img').css('opacity', '0.1')
+                 }   
+               
+                
+                
+             })
+         })
+     </script> 
+     <script>
+         $(document).ready(function()
+         {
+             $(window).scroll(function()
+             {
+                 if($(this).scrollTop() > 1100)
+                 {
+                     $('.pro2 img').css('opacity', '1')
+                 }
+                 else 
+                 {
+                    $('.pro2 img').css('opacity', '0.1')
+                 }
+             })
+         })
+     </script>
+     <script>
+          $(document).ready(function()
+         {
+            
+             var li3 =$('.li3');
+
+             $(window).scroll(function()
+             {
+                 if($(this).scrollTop() > 2400)
+                 {
+                     li3.css('color', 'orangered')
+                     
+                 }
+                
+             })
+         })
+     </script>  
+      <script>
+        $(document).ready(function()
+       {
+          
+           var li4 =$('.li4');
+
+           $(window).scroll(function()
+           {
+               if($(this).scrollTop() > 2600)
+               {
+                   li4.css('color', 'pink')
+                   $('.reseau p').css('color', 'greenyellow')
+                   
+               }
+              
+           })
+       })
+   </script>  
+   <script>
+    $(document).ready(function()
+    {
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 2400)
+            {
+                $('.pres h2').css({'border-bottom': '2px solid  rgb(69, 69, 230)', 'width' : '105px'})
+                $('.comp .comps').css({'border-bottom': '2px solid   springgreen', 'width' : '200px'})
+                
+            }
+            else
+            {
+                $('.pres h2').css({'border-bottom': '2px solid  rgb(69, 69, 230)', 'width' : '20px'})
+                $('.comp .comps').css({'border-bottom': '2px solid   springgreen', 'width' : '20px'})
+            }
+            
+        })
+    })
+   </script>
+   <script>
+    
+      function loader()
+      {
+        var load = document.querySelector('.loader').classList.add('hidden')
+      }
+      setTimeout(loader, 3000)
+   </script>
+   <script>
+       $(document).ready(function()
+       {
+          
+        var li5 =$('.li5');
+
+$(window).scroll(function()
+{
+    if($(this).scrollTop() > 2890)
+    {
+       
+        $('.li5').css('color', 'rgb(0, 255, 149)')
+        
+    }
+   
+})
+       })
+   </script>
+   <script>
+       $(document).ready(function()
+       {
+           {
+               $(window).scroll(function()
+               {
+                   if($(this).scrollTop() > 2540)
+                   {
+                        $('body, .reseauapp').css('background-color', ' rgb(60, 59, 59)')
+                        $('.portfolio h1, .reseau h1').css('color', 'white')
+                       
+                   }
+                   else
+                   {
+                    $('body, .reseauapps').css('background-color', 'white');
+                    $('.portfolio h1, .reseau h1').css('color', 'black')
+                   }
+               })
+           }
+       })
+   </script>
+   
+  
+ 
+            
+       
+   <div class="loader"> <div class="load"></div> </div>
+   
+    
+    <div class="AccueilImg">
+            <nav>
+                
+                <div class="logo">
+                    <img src="shazam.svg" width="50px" height="50px" style="transform: rotate(-43deg);">
+                </div>
+              
+                  <ul>
+                        <li><a href="#" class="li1">Home</a></li>
+                        <li><a href="#" class="li2">Projet</a></li>
+                        <li><a href="#" class="li3"> About</a></li>
+                        <li><a href="#" class="li4">Reseau</a></li>
+                        <li><a href="#" class="li5">Portfolio</a></li>
+                        
+                    </ul>
+               
+             
+                    
+            </nav>
+        
+        <div class="cv">
+            <h1 class="nom1">I'm <span  class='noms'  style="color: tomato;">karim</span> </h1>
+            
+            <p><a href="#">Télécharger mon CV</a></p>
+            <div class="containercube" style="display: table; width: 100%; height: 300px; text-align: center; margin-top: 5px;">
+              <div class="textcube">
+             
+              </div>
+            </div>
+            
+               
+          <div class="scrollup">
+              <p style="margin-top: 100px; color: white;">  Scrollez vers le bas </p>
+            <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-down-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="margin-top: 2px; color:white;">
+                <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+              </svg>
+          </div>
+       
+        </div>
+     
+    </div>
+    <div class="project">
+        <h1>
+            MY FUTURE CAREER
+        </h1>
+        <div class="bor"></div>
+        <div class="pro1">
+            <img src="personnage-developpeur-guy-travaille-ordinateur-portable-pour-creer-code-debogage-style-dessin-anime-plat_197170-380.jpg" width="700px" height="500px" style="margin-top: 30px; opacity: 0.1; transition: all 0.5s linear;">
+            <p>Mon permier projet, ca sera d'être developpeur Front End, car j aurais fait des études en multimedia et BES webdeveloppeur<br>Je trouve que ca sera une bonne exeprience avant d'aller aux choses supèrieurs.</p>
+        </div>
+        <h1>FREELANCE</h1>
+        <div class="bar"></div>
+        <div class="pro2">
+            <img src="illustration-concept-typage-code_114360-2937.jpg" width="700px" height="700px" style="margin-top: 50px; opacity: 0.1; transition: all 0.5s linear;">
+            <p>Avec mon project n°1, je aurais augmenter mes connaissances dans le monde du web, donc je pense qu'après, je pourrais travailler<br> entant que developpeur freelance mais en fesant associé avec d'autre presonne.</p>
+        </div>
+    </div>
+ 
+    <div class="about">
+         <h1>About</h1>
+         <div class="prescomp">
+              <div class="pres" class="block">
+             <h2>L'envie</h2>
+             <p>
+                 Salut! Je m'appelle karim Naviaux, au moment j'ai conçu ce site vitrine, j' avais 17 ans<br> Apres avoir finit mes etudes de multimedia, j aimerais bien travailler entant que développeur Front end. <br>
+                 Chaque jour, je ne fais coder, sans m'arrêter, comme ça je gagnerais en experience. <br> je n'hesite à aller voir des forum pour demander l'aide si je ne comprend pas quelque chose.
+             </p>
+             <div class="btn">
+                 Savoir plus
+             </div>
+         </div>
+         <div class="comp" class="block">
+            <h2 class="comps"> 
+                Compétences
+            </h2>
+            <ul>
+             <li>Rigoureux</li>
+             <li>Sociable</li>
+             <li>Adore travailler en equipe</li>
+             <li>Personne creative</li>
+         </ul>
+         <p>
+             j'en ai plus, mais je ne vais pas tous les citer, sinon je n'aurais plus de place<br>
+             Mais si vous en voulez un peu plus, il y en aura sur mon cv 
+         </p>
+         <div class="btn">
+            Savoir plus
+        </div>
+         </div>
+         </div>
+        
+         
+    </div>  
+          
+   <div class="reseau">
+       
+       <h1>Réseau </h1>
+       <p>Mes réseaux de tous les jours: elles serviront comme moyen de communication pour me poser des questions <br>Survolez sur les icones !</p>    
+     </div>  
+       
+  <div class="reseauapp" style="transition: all 1s ease-in;">
+      <ul>
+          <li>
+            <img src="instagram.svg" title="karimnav2003">
+        </li>
+            
+          <li>
+            <img src="snap.svg" title="karnvx2003">
+        </li>
+          <li>
+              <img src="whatsapp.svg" title=" (+32) 0491 11 17 33" >
+        </li>
+      </ul>
+  </div>
+   <div class="portfolio">
+       <h1>PORTFOLIO</h1>
+       <div class="bir"></div>
+       <div class="album">
+            <div class="c-photo">
+          <img src="Sans titre.png" width="800px"  height="400px">
+       </div>
+       <div class="c-photo" >
+        <img src="Sans titre1.png" width="800px"  height="400px">
+     </div>
+     <div class="c-photo">
+        <img src="Sans titre3.png"width="800px"  height="400px" >
+       
+     </div>
+       </div>
+      
+       
+   </div>
+</div>
+                         
+        
+</body>
+
+</html>      
+
+   
+
+             
+
+
